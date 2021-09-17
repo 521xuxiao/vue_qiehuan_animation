@@ -5,7 +5,7 @@
       <li @click="handleClick('another')">画面页</li>
       <li @click="handleClick('last')">后面</li>
     </ul>
-    <transition :name="transitionName">
+    <transition :name="transitionName" mode="out-in">
       <router-view/>
     </transition>
   </div>
